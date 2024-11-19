@@ -42,6 +42,16 @@ with st.container(border=True):
                                           'Indeks Keparahan Kemiskinan (P2)'],
                       markers=True)
     
+    # Menempatkan legenda di bawah grafik
+    grafik3.update_layout(legend=dict(
+        orientation="h",
+        yanchor="bottom",
+        y=-0.3,
+        xanchor="center",
+        x=0.5,
+        title_text=''
+    ))
+    
     st.plotly_chart(grafik3, use_container_width=True)
         
 with st.expander('Lihat Tabel Lengkap'):
