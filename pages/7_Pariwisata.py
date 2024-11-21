@@ -17,8 +17,8 @@ kol1a, kol1b = st.columns(2)
 with kol1a:
     with st.container(border=True):
         st.success('Tingkat Penghunian Kamar (TPK) Hotel Kota Bandung')
-        grafik1 = px.bar(data, x='Tahun', y='TPK', barmode='group',
-                         text='TPK', color='Kategori')
+        grafik1 = px.bar(data, x='Kategori', y='TPK', barmode='group',
+                         text='TPK', color='Tahun')
         
         # Menempatkan legenda di bawah grafik
         grafik1.update_layout(legend=dict(
@@ -35,8 +35,8 @@ with kol1a:
 with kol1b:
     with st.container(border=True):
         st.info('Tingkat Pemakaian Tempat Tidur (TPTT) Hotel Kota Bandung')
-        grafik2 = px.bar(data, x='Tahun', y='TPTT', barmode='group',
-                          text='TPTT', color='Kategori')
+        grafik2 = px.bar(data, x='Kategori', y='TPTT', barmode='group',
+                          text='TPTT', color='Tahun')
         
         # Menempatkan legenda di bawah grafik
         grafik2.update_layout(legend=dict(
@@ -55,8 +55,8 @@ with st.expander('Rata-rata Lama Menginap Tamu'):
     with kol2a:
         with st.container(border=True):
             st.success('Rata-rata Lama Menginap Tamu Asing (RLMTA) di Hotel Kota Bandung')
-            grafik3 = px.bar(data, x='Tahun', y='RLMTA', barmode='group',
-                            text='RLMTA', color='Kategori')
+            grafik3 = px.bar(data, x='Kategori', y='RLMTA', barmode='group',
+                            text='RLMTA', color='Tahun')
             
             # Menempatkan legenda di bawah grafik
             grafik3.update_layout(legend=dict(
@@ -73,8 +73,8 @@ with st.expander('Rata-rata Lama Menginap Tamu'):
     with kol2b:
         with st.container(border=True):
             st.info('Rata-rata Lama Menginap Tamu (RLMT) di Hotel Kota Bandung')
-            grafik4 = px.bar(data, x='Tahun', y='RLMT', barmode='group',
-                            text='RLMT', color='Kategori')
+            grafik4 = px.bar(data, x='Kategori', y='RLMT', barmode='group',
+                            text='RLMT', color='Tahun')
             
             # Menempatkan legenda di bawah grafik
             grafik4.update_layout(legend=dict(
@@ -91,8 +91,8 @@ with st.expander('Rata-rata Lama Menginap Tamu'):
     with kol2c:
         with st.container(border=True):
             st.success('Rata-rata Lama Menginap Tamu Dalam Negeri (RLMTD) di Hotel Kota Bandung')
-            grafik5 = px.bar(data, x='Tahun', y='RLMTD', barmode='group',
-                            text='RLMTD', color='Kategori')
+            grafik5 = px.bar(data, x='Kategori', y='RLMTD', barmode='group',
+                            text='RLMTD', color='Tahun')
             
             # Menempatkan legenda di bawah grafik
             grafik5.update_layout(legend=dict(
@@ -111,8 +111,8 @@ with st.expander('Jumlah Tamu'):
     with kol3a:
         with st.container(border=True):
             st.success('Jumlah Tamu Asing - Hotel Kota Bandung')
-            grafik6 = px.bar(data, x='Tahun', y='Tamu Asing', barmode='group',
-                            text='Tamu Asing', color='Kategori')
+            grafik6 = px.bar(data, x='Kategori', y='Tamu Asing', barmode='group',
+                            text='Tamu Asing', color='Tahun')
             
             # Menempatkan legenda di bawah grafik
             grafik6.update_layout(legend=dict(
@@ -129,8 +129,8 @@ with st.expander('Jumlah Tamu'):
     with kol3b:
         with st.container(border=True):
             st.info('Jumlah Tamu Dalam Negeri - Hotel Kota Bandung')
-            grafik7 = px.bar(data, x='Tahun', y='Tamu Domestik', barmode='group',
-                            text='Tamu Domestik', color='Kategori')
+            grafik7 = px.bar(data, x='Kategori', y='Tamu Domestik', barmode='group',
+                            text='Tamu Domestik', color='Tahun')
             
             # Menempatkan legenda di bawah grafik
             grafik7.update_layout(legend=dict(
