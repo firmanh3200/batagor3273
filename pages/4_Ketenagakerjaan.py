@@ -55,3 +55,7 @@ with st.expander('Lihat Tabel Lengkap'):
     st.warning('Indikator Ketenagakerjaan Makro Kota Bandung dan Jawa Barat')
     df = data.sort_values(by='Tahun', ascending=False)
     st.dataframe(df, hide_index=True, use_container_width=True)
+    
+st.subheader('', divider='rainbow')
+st.caption(':green[Batagor - Bandung Kota dalam Grafik dan Indikator]')
+st.caption(':green[Hak Cipta @ BPS Kota Bandung]')

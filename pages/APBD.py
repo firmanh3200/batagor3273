@@ -45,3 +45,6 @@ if wilayah_terpilih and tahun_terpilih and bulan_terpilih:
     st.link_button('Unduh Data dalam bentuk CSV', f'{url2}')
     st.link_button('Kunjungi Web DJPK', f'https://djpk.kemenkeu.go.id/portal/data/apbd?periode={bulan_terpilih}&tahun={tahun_terpilih}&provinsi=10&pemda={kode_terpilih}')
     
+st.subheader('', divider='rainbow')
+st.caption(':green[Batagor - Bandung Kota dalam Grafik dan Indikator]')
+st.caption(':green[Hak Cipta @ BPS Kota Bandung]')

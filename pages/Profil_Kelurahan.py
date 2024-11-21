@@ -85,5 +85,10 @@ def main():
     
     st.link_button("Lihat Sumber Data", url=f"https://e-prodeskel.kemendagri.go.id/datapokok/data.php?kodesa={desaterpilih}")
 
+
+    st.subheader('', divider='rainbow')
+    st.caption(':green[Batagor - Bandung Kota dalam Grafik dan Indikator]')
+    st.caption(':green[Hak Cipta @ BPS Kota Bandung]')
+
 if __name__ == '__main__':
     main()
