@@ -5,3 +5,6 @@ openpyxl
 lxml
 requests
 beautifulsoup4
+geopandas
+matplotlib
+folium
