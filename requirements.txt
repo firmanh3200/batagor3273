@@ -8,3 +8,4 @@ beautifulsoup4
 geopandas
 matplotlib
 folium
+streamlit-folium
